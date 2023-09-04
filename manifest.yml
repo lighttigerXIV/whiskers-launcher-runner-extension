@@ -1,0 +1,29 @@
+id: com-lighttigerxiv-terminal-runner
+name: Terminal Runner
+description: This extension adds let's you run commands right from the launcher
+os: 
+  - linux
+  - windows
+keyword: '>'
+settings:
+  linux:
+    - id: terminal
+      name: Terminal
+      description: Your terminal path
+      input: text
+      default_value: /usr/bin/gnome-terminal
+    - id: exec
+      name: Execution Parameter
+      description: The parameter you terminal uses to execute commands. For example Gnome Terminal uses '--' and Konsole uses '-e'
+      input: text
+      default_value: --
+    - id: shell
+      name: Shell
+      description: The shell to run the commands in
+      input: select
+      default_value: bash/zsh
+      options:
+        - name: Bash/Zsh
+          value: bash/zsh
+        - name: Fish
+          value: fish

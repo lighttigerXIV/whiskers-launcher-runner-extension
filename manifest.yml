@@ -1,4 +1,5 @@
 id: com-lighttigerxiv-terminal-runner
+version: "0.1.0"
 name: Terminal Runner
 description: This extension adds let's you run commands right from the launcher
 os: 

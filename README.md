@@ -1,1 +1,1 @@
-# simple-kl-terminal-runner-extension
+# Terminal Runner Extension

@@ -6,5 +6,4 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-shutil = "0.1.2"
-simple_kl_rs = {path = "/home/lighttigerxiv/Development/Crates/simple-kl-rs"}
+simple_kl_rs = { git = "https://github.com/lighttigerXIV/simple-kl-rs.git", branch = "master" }

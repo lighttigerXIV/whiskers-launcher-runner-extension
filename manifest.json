@@ -3,7 +3,7 @@
   "name": "Runner",
   "version_name": "1.0.0",
   "version_code": 1,
-  "description": "A extension with to run commands in a terminal",
+  "description": "A extension to run commands in a terminal",
   "os": ["linux"],
   "keyword": "run",
   "settings": [

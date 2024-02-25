@@ -36,8 +36,8 @@ pub fn handle_actions(context: Context) {
                 .arg(&terminal_args)
                 .arg(&shell)
                 .arg("-c")
-                .arg("-i") //Used to get environment variables
-                .arg(format!("{};{} {}", &command, &shell, &custom_shell_args))
+                .arg("-i") // Used to make alias work
+                .arg(format!("{};{} {}", &command, &shell, &custom_shell_args)) // Needs the shell in the end to keep the terminal open
                 .spawn()
                 .unwrap();
         }

@@ -1,9 +1,7 @@
 [package]
-name = "simple-kl-terminal-runner-extension"
-version = "0.1.0"
+name = "whiskers-launcher-runner-extension"
+version = "1.0.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
-simple_kl_rs = { git = "https://github.com/lighttigerXIV/simple-kl-rs.git", branch = "master" }
+whiskers-launcher-rs = {git = "https://github.com/lighttigerXIV/whiskers-launcher-rs.git"}

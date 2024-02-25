@@ -1,0 +1,85 @@
+{
+  "id": "lighttigerxiv/runner",
+  "name": "Runner",
+  "version_name": "1.0.0",
+  "version_code": 1,
+  "description": "A extension with to run commands in a terminal",
+  "os": ["linux"],
+  "keyword": "run",
+  "settings": [
+    {
+      "id": "terminal_path",
+      "title": "Terminal Path",
+      "description": "The terminal path",
+      "setting_type": "text",
+      "default_value": "/usr/bin/konsole",
+      "os": ["*"]
+    },
+    {
+      "id": "terminal_args",
+      "title": "Terminal Args",
+      "description": "Some terminals might require args to run commands from it",
+      "setting_type": "text",
+      "default_value": "-e",
+      "os": ["*"]
+    },
+    {
+      "id": "shell",
+      "title": "Shell",
+      "description": "Select the shell where you want to run the commands",
+      "setting_type": "select",
+      "default_value": "auto",
+      "os": ["*"],
+      "select_options": [
+        {
+          "id": "auto",
+          "text": "Auto (uses environment variable)"
+        },
+        {
+          "id": "bash",
+          "text": "Bash"
+        },
+        {
+          "id": "zsh",
+          "text": "ZSH"
+        },
+        {
+          "id": "fish",
+          "text": "Fish"
+        },
+        {
+          "id": "custom",
+          "text": "Custom"
+        }
+      ]
+    },
+    {
+      "id": "custom_shell",
+      "title": "Custom Shell",
+      "description": "The custom shell path",
+      "setting_type": "text",
+      "default_value": "/usr/bin/fish",
+      "os": ["*"],
+      "show_conditions": [
+        {
+          "setting_id": "shell",
+          "setting_value": "custom"
+        }
+      ]
+    },
+    {
+      "id": "custom_shell_args",
+      "title": "Custom Shell Args",
+      "description": "The custom shell args",
+      "setting_type": "text",
+      "default_value": "",
+      "os": ["*"],
+      "show_conditions": [
+        {
+          "setting_id": "shell",
+          "setting_value": "custom"
+        }
+      ]
+    }
+  ]
+}
